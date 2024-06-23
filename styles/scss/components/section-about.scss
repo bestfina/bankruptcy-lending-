@@ -1,0 +1,42 @@
+.about {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        background-color: rgba(163, 117, 75, 5%);
+        background-image: url(../../../images/man-second-block.png);
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        justify-content: end;
+        padding-right: 150px;
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+    &__title {
+        margin-bottom: 25px;
+    }
+    &__image {
+        display: none;
+    }
+    &__block-text {
+        max-width: 500px;
+    }
+    &__guarantee {
+        margin-bottom: 20px;
+    }
+    &__guarantee_last {
+        margin-bottom: 50px;
+    }
+    &__text {
+        text-align: center;
+        color: var(--color-dark);
+        margin-bottom: 10px;
+    }
+    &__link {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+        background-color: var(--color-brown);
+        padding: 18px 36px;
+        font-weight: 600;
+    }
+}

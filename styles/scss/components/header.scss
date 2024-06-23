@@ -1,0 +1,60 @@
+.header {
+    padding-top: 25px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__menu {
+        margin-left: 50px;
+    }
+    &__calback {
+        @extend %flex-collumn;
+        align-items: end;
+    }
+    &__mob-burger,
+    &__mob-phone {
+        display: none;
+    }
+}
+
+.logo {
+    @extend %flex-collumn;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 26px;
+    span {
+        color: var(--color-brown);
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+}
+
+.list {
+    @extend %flex-center;
+    gap: 40px;
+    &__link {
+        font-size: 16px;
+    }
+}
+
+.calback {
+    margin-left: auto;
+    &__phone {
+        display: flex;
+        align-items: center;
+        &::before {
+            content: url(../../../images/icons/phone.svg);
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    }
+    &__link {
+        color: var(--color-brown);
+        text-decoration: underline;
+    }
+}

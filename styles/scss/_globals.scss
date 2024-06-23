@@ -1,0 +1,36 @@
+* {
+    font-family: var(--font-family-base);
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+body {
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+}
+
+.header,
+section,
+.footer {
+    @extend %flex-center;
+}
+
+section {
+    margin-bottom: 150px;
+    &:nth-child(1) {
+        margin-bottom: 100px;
+    }
+}
+
+.container {
+    max-width: var(--container-width);
+    width: 100%;
+    padding-inline: var(--container-padding);
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-dark);
+}

@@ -1,0 +1,177 @@
+.price {
+    &__container {
+        display: flex;
+        gap: 40px;
+    }
+    &__block {
+        width: 50%;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__block-icon {
+        margin-bottom: 20px;
+    }
+    &__block-icon_last {
+        margin-bottom: 40px;
+    }
+}
+
+.correspondence {
+    width: 50%;
+    border: var(--border-solid);
+    border-radius: var(--border-radius);
+    background-color: #FAF3ED;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgb(163, 117, 75, 20%);
+    &__massage_first,
+    &__massage_second {
+        font-size: 16px;
+        border-radius: var(--border-radius);
+        padding: 15px 8px 8px 15px;
+        position: relative;
+        @extend %flex-collumn;
+        time,
+        div {
+            font-size: 12px;
+            margin-left: auto;
+        }
+    }
+    &__massage_first {
+        background-color: #FFFFFF;
+        max-width: 273px;
+        &::before {
+            content: url(../../../images/icons/decor-massage-first.svg);
+            position: absolute;
+            left: -11px;
+            top: -8px;
+        }
+        p {
+            color: var(--color-dark);
+            max-width: 218px;
+        }
+        time {
+            color: #ACACAC;
+        }
+    }
+    &__massage_second {
+        margin-left: auto;
+        margin-top: 15px;
+        background-color: #A3754B;
+        max-width: 358px;
+        font-weight: 600;
+        color: white;
+        &::before {
+            content: url(../../../images/icons/decor-massage-second.svg);
+            position: absolute;
+            right: -10px;
+            bottom: -12px;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__name,
+    &__tel {
+        background-color: #FFFFFF;
+        border: var(--border-solid);
+        border-radius: var(--border-radius);
+        padding: 18px 20px;
+        color: #A4A4A4;
+        font-size: 16px;
+    }
+    &__name {
+        width: 24%;
+    }
+    &__tel {
+        width: 37%;
+    }
+    &__btn {
+        background-color: #A3754B;
+        border-radius: var(--border-radius);
+        width: 37%
+    }
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #A4A4A4;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #A4A4A4;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #A4A4A4;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #A4A4A4;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #A4A4A4;
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: #A4A4A4;
+}
+
+.checked {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    margin-top: 15px;
+    &__text,
+    a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__text {
+        margin-left: 25px;
+        color: #626262;
+        max-width: 380px;
+        a {
+            color: var(--color-brown);
+            text-decoration: underline;
+        }
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        opacity: 0;
+        clip: rect(0 0 0 0);
+        padding-left: 20px;
+        &:checked+span::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url(../../../images/icons/checkbox-tick.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #A3754B;
+        }
+    }
+    span {
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 16px;
+        border: 1px solid var(--color-brown);
+        border-radius: 3px;
+    }
+}

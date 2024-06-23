@@ -1,0 +1,15 @@
+.burger {
+    background-color: var(--color-dark);
+    box-shadow: -20px 0 40px rgb(0, 0, 0, 0.45);
+    z-index: 1;
+    height: 100vh;
+    position: absolute;
+    padding: 25px 22px 80px 35px;
+    right: 0;
+    display: none;
+    transform: translate(300px);
+}
+
+.burger_active {
+    transform: translate(0);
+}

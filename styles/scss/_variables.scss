@@ -1,0 +1,15 @@
+$breckpoints: ( desktop: 1380px, notebook: 1024px, tablet: 767px, mobile: 425px, small-mob: 360px, );
+:root {
+    --color-brown: #A3754B;
+    --color-dark: #282828;
+    --color-gray: #8A8A8A;
+    --bg-color-light: #FAF3ED;
+    --bg-color-light-alt: #E9EFFF;
+    --bg-color-dark: #1E1D19;
+    --font-family-base: 'Manrope', sans-serif;
+    --font-family-alt: 'Gilroy', sans-serif;
+    --border-radius: 10px;
+    --border-solid: 1px solid rgb(163, 117, 75, 0.15);
+    --container-width: 1160px;
+    --container-padding: 22px;
+}

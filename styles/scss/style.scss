@@ -1,0 +1,18 @@
+@import '_fonts',
+'_variables',
+'_reset',
+'_extends',
+'_globals';
+@import 'components/header';
+@import 'components/section-main';
+@import 'components/section-about';
+@import 'components/section-feelings';
+@import 'components/section-advantages';
+@import 'components/section-price';
+@import 'components/section-reviews';
+@import 'components/section-certificatess';
+@import 'components/footer';
+@import 'components/burger';
+@import 'components/popups';
+@import 'components/common';
+@import 'components/_media';

@@ -1,0 +1,32 @@
+.advantages {
+    &__wrapper-cards {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+
+.card {
+    background-color: var(--bg-color-light);
+    border: var(--border-solid);
+    width: 20%;
+    padding: 20px;
+    min-height: 200px;
+    border-radius: var(--border-radius);
+    &:nth-child(4) {
+        padding-right: 9px;
+    }
+    &__block-icon {
+        @extend %flex-center;
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-brown);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: var(--color-dark);
+        font-size: 16px;
+    }
+}

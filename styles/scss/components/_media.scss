@@ -1,0 +1,425 @@
+@media screen and (max-width: map-get($breckpoints, "desktop")) {
+    .main-section {
+        &__bg-man {
+            width: 55%;
+            left: auto;
+            right: 0;
+            transform: translate(0);
+        }
+        &__decor_first {
+            display: none;
+        }
+    }
+    .about {
+        &__wrapper {
+            padding-right: 60px;
+        }
+    }
+    .form {
+        &__name,
+        &__tel {
+            padding: 16px 20px;
+        }
+        &__btn {
+            font-size: 16px;
+            width: 32%;
+        }
+        &__name {
+            width: 25%;
+        }
+        &__tel {
+            width: 41%;
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breckpoints, "notebook")) {
+    .header {
+        &__calback,
+        &__menu {
+            display: none;
+        }
+        &__mob-phone {
+            margin-left: auto;
+            display: flex;
+            margin-right: 25px;
+            img {
+                width: 32px;
+            }
+        }
+        &__mob-burger {
+            display: block;
+        }
+    }
+    .main-section {
+        &__container {
+            padding-top: 140px;
+            padding-bottom: 120px;
+        }
+        &__title {
+            font-size: 34px;
+            max-width: 550px;
+        }
+        &__text {
+            max-width: 335px;
+        }
+        &__bg-man {
+            max-width: 640px;
+            width: 100%;
+            right: 0;
+            left: auto;
+            transform: translate(0);
+        }
+    }
+    .citation {
+        padding: 15px;
+        width: 235px;
+        left: auto;
+        right: 20px;
+        top: 60%;
+        transform: translate(0);
+        z-index: 1;
+    }
+    .about {
+        &__wrapper {
+            background-image: none;
+            display: block;
+            padding: 25px;
+            padding-bottom: 0;
+        }
+        &__block-text {
+            max-width: 700px;
+        }
+        &__image {
+            display: block;
+            margin: 0 auto;
+            max-width: 500px;
+            width: 100%;
+            margin-top: 55px;
+        }
+    }
+    .advantages {
+        &__wrapper-cards {
+            flex-wrap: wrap;
+        }
+    }
+    .card {
+        width: 30%;
+    }
+    .price {
+        &__container {
+            gap: 20px;
+        }
+        &__block {
+            width: 40%;
+        }
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__block-icon {
+            margin-bottom: 15px;
+            img {
+                width: 21px;
+            }
+            p,
+            span {
+                font-size: 14px;
+            }
+        }
+        &__block-icon_last {
+            margin-bottom: 30px;
+        }
+        &__form {
+            flex-direction: column;
+        }
+        &__correspondence {
+            width: 60%;
+            padding: 25px;
+        }
+    }
+    .form {
+        gap: 10px;
+        &__name,
+        &__tel,
+        &__btn {
+            width: 100%;
+        }
+        &__btn {
+            margin: 10px 0;
+            font-size: 16px;
+            padding: 16px 20px;
+        }
+        &__checked {
+            margin: 0;
+        }
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        transition: 0.5s;
+        &__close {
+            margin-left: auto;
+            display: block;
+            margin-bottom: 30px;
+        }
+        &__calback {
+            margin-left: 0;
+            margin-top: auto;
+        }
+        &__logo {
+            font-size: 24px;
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+    .list {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        &__link {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .menu {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: map-get($breckpoints, "tablet")) {
+    h2 {
+        font-size: 28px;
+    }
+    section {
+        margin-bottom: 100px;
+        &:nth-child(1) {
+            margin-bottom: 60px;
+        }
+    }
+    .main-section {
+        height: fit-content;
+        &__title,
+        &__text {
+            max-width: 580px;
+        }
+        &__bg-man {
+            display: none;
+        }
+        &__container {
+            padding-top: 140px;
+            padding-bottom: 200px;
+        }
+        &__bg-man-mob {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+    }
+    .wrapper {
+        position: relative;
+    }
+    .citation {
+        width: 220px;
+        margin-top: 60px;
+        position: inherit;
+        margin-left: auto;
+        margin-right: 125px;
+        &__description {
+            max-width: 100px;
+        }
+    }
+    .advantages {
+        &__wrapper-cards {
+            flex-wrap: wrap;
+        }
+    }
+    .card {
+        width: 46%;
+        &__block-icon {
+            width: 55px;
+            height: 55px;
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+    .price {
+        &__container {
+            flex-direction: column;
+        }
+        &__block,
+        &__correspondence {
+            width: 100%;
+        }
+        &__title {
+            text-align: center;
+        }
+    }
+    .form {
+        &__name,
+        &__tel {
+            font-size: inherit;
+        }
+        &__checked {
+            margin: 0;
+        }
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: start;
+        >div {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+    }
+    .container-popup {
+        padding: 0 22px;
+    }
+    .popup {
+        width: 100%;
+    }
+    .footer {
+        &__container {
+            gap: 50px;
+        }
+        &__top {
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__contact,
+        &__map {
+            width: 100%;
+        }
+        &__bottom {
+            flex-direction: column-reverse;
+            align-items: start;
+            margin-bottom: 25px;
+        }
+        &__request {
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+        &__policy,
+        &__copyright {
+            font-size: 14px;
+        }
+        &__policy {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breckpoints, "mobile")) {
+    h2 {
+        font-size: 22px;
+    }
+    * {
+        font-size: 14px;
+    }
+    .header {
+        &__logo {
+            font-size: 20px;
+            span {
+                font-size: 11px;
+            }
+        }
+    }
+    .main-section {
+        &__title {
+            font-size: 32px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__button {
+            padding: 16px 30px;
+            font-size: 16px;
+        }
+        &__bg-man-mob {
+            width: 500px;
+        }
+        &__decor_second {
+            bottom: 15px;
+            transform: translate(calc(-50% - 110px));
+        }
+    }
+    .citation {
+        left: 0;
+        &__title {
+            font-size: 14px;
+        }
+        &__description {
+            font-size: 13px;
+        }
+    }
+    .about {
+        &__guarantee {
+            img {
+                width: 22px;
+            }
+        }
+        &__link {
+            padding: 16px 0;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+        }
+        &__title {
+            max-width: 260px;
+        }
+        &__text {
+            max-width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__guarantee_last {
+            margin-bottom: 40px;
+        }
+    }
+    .card {
+        width: 100%;
+        &__text {
+            font-size: inherit;
+        }
+    }
+    .price {
+        &__block-icon {
+            max-width: 264px;
+        }
+        &__correspondence {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .checked {
+        &__text,
+        a {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breckpoints, "small-mob")) {
+    .header {
+        &__mob-phone {
+            margin-right: 15px;
+        }
+    }
+    .main-section {
+        &__title {
+            font-size: 28px;
+        }
+        &__bg-man-mob {
+            width: 325px;
+        }
+    }
+    .citation {
+        margin: 60px 0;
+    }
+}

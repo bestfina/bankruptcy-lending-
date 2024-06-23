@@ -1,0 +1,11 @@
+.certificates {
+    &__container {
+        position: relative;
+    }
+    &__swiper {
+        margin-top: 25px;
+        img {
+            min-width: 100%;
+        }
+    }
+}

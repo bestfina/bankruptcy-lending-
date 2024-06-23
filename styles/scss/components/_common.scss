@@ -1,0 +1,54 @@
+.block-icon {
+    display: flex;
+    align-items: start;
+    p {
+        margin-left: 8px;
+        color: var(--color-dark);
+    }
+    span {
+        color: var(--color-brown);
+        font-weight: 600;
+    }
+}
+
+.feelings__title,
+.advantages__title,
+.popup__title,
+.popup__text {
+    text-align: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--color-brown);
+    border-radius: 100%;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin: 0;
+}
+
+.swiper-button-next:after {
+    content: url(../../../images/icons/arrow.svg);
+    font-size: initial;
+}
+
+.swiper-button-prev:after {
+    content: url(../../../images/icons/arrow.svg);
+    font-size: initial;
+    transform: rotate(-180deg);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    >div {
+        margin-left: auto;
+        display: flex;
+        gap: 15px;
+    }
+}

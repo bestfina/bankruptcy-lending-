@@ -1,0 +1,26 @@
+.reviews {
+    &__container {
+        position: relative;
+    }
+    &__item {
+        background-color: var(--bg-color-light);
+        border: var(--border-solid);
+        min-height: 230px;
+        border-radius: var(--border-radius);
+        @extend %flex-center;
+    }
+    &__block-play {
+        cursor: pointer;
+        @extend %flex-center;
+        background-color: var(--color-brown);
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+        img {
+            margin-left: 5px;
+        }
+    }
+    &__swiper {
+        margin-top: 25px;
+    }
+}
